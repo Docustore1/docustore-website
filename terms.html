@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3MWE1KCMF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z3MWE1KCMF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Docu Store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Docu Store Logo">
+                <span>Docu Store</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#contact" class="btn btn-primary"
+                    style="padding: 0.5rem 1rem; margin-left: 1rem;">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="container py-20">
+        <div class="card" style="max-width: 800px; margin: 0 auto; background: white;">
+            <h1 class="text-center mb-4">Terms and Conditions</h1>
+            <p class="text-center text-muted mb-4">Last Updated: January 7, 2026</p>
+
+            <div style="text-align: left; line-height: 1.8;">
+                <p>Welcome to Docu Store. By accessing or using our website and services, you agree to be bound by these
+                    Terms and Conditions.</p>
+
+                <h3 class="mt-4">1. Acceptance of Terms</h3>
+                <p>By registering for and using Docu Store, you accept and agree to be bound by the terms and provision
+                    of this agreement. In addition, when using these particular services, you shall be subject to any
+                    posted guidelines or rules applicable to such services.</p>
+
+                <h3 class="mt-4">2. User Responsibilities</h3>
+                <p>You agree to use Docu Store only for lawful purposes. You are responsible for maintaining the
+                    confidentiality of your account and password. You specifically agree not to:</p>
+                <ul>
+                    <li>Upload content that is illegal, offensive, or violates intellectual property rights.</li>
+                    <li>Attempt to breach the security or integrity of our systems.</li>
+                    <li>Use the service for commercial solicitation without express permission.</li>
+                </ul>
+
+                <h3 class="mt-4">3. Intellectual Property</h3>
+                <p>The content you upload remains yours. However, by uploading content, you grant Docu Store a license
+                    to store and display this content solely for the purpose of providing the service to you.</p>
+
+                <h3 class="mt-4">4. Termination</h3>
+                <p>We reserve the right to terminate or suspend your account immediately, without prior notice or
+                    liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+
+                <h3 class="mt-4">5. Limitation of Liability</h3>
+                <p>In no event shall Docu Store, nor its directors, employees, partners, agents, suppliers, or
+                    affiliates, be liable for any indirect, incidental, special, consequential or punitive damages,
+                    including without limitation, loss of profits, data, use, goodwill, or other intangible losses.</p>
+
+                <h3 class="mt-4">6. Contact Us</h3>
+                <p>If you have any questions about these Terms, please contact us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="nav-logo footer-logo">
+                Docu Store
+            </div>
+            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Built for Colleges, Designed for Productivity.
+            </p>
+
+            <div class="footer-links justify-center">
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                <a href="terms.html" class="footer-link" style="color: white; font-weight: bold;">Terms and
+                    Conditions</a>
+                <a href="#" class="footer-link">Feedback</a>
+                <a href="https://www.instagram.com/docu__store/?hl=en" target="_blank" rel="noopener noreferrer"
+                    class="footer-link">Instagram</a>
+                <a href="https://www.linkedin.com/in/docustore-collegeerp-53016b3a3/" target="_blank"
+                    rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Docu Store. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
